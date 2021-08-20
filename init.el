@@ -152,6 +152,3 @@
 
 ;; Cargar modulos cuando se abre el codigo fuente correspondiente
 (require 'rustic)
-(add-to-list 'auto-mode-alist '("\\.rs\\'" . rustic-mode))
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
-(add-to-list 'auto-mode-alist '("\\.c\\'" . c-mode))
