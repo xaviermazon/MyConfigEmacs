@@ -141,9 +141,9 @@ Can be an integer to determine the exact padding."
    (highlight :background base4)
    (isearch :freground yellow-2 :weight 'bold :background base6)
    (isearch-fail :foreground fg :background red-4)
-   (lazy-highlight :foreground yellow-2 :weight 'bold :background base3)
+   (lazy-highlight :background yellow-2 :weight 'bold :foreground base3)
    ((line-number &override) :foreground base7)
-   ((line-number-current-line &override) :foreground yellow-2)
+   ((line-number-current-line &override) :foreground yellow-2 :background bg)
    (link :foreground yellow-2 :underline t :weight 'bold)
    (minibuffer-prompt :foreground yellow)
    (mode-line
