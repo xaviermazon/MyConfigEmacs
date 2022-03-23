@@ -1,0 +1,24 @@
+;; -*- emacs-lisp -*- <22/02/23 18:00:13 /home/xavi/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; Run `M-x tramp-cleanup-all-connections' instead.
+
+(((tramp-file-name "ssh" nil nil "AsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" nil nil "rAsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" nil nil "roAsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" nil nil "rooAsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" nil nil "rootAsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" "root" nil "AsusI7" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" "root" nil "AsusI73022" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" "root" nil "AsusI7-3022" nil nil nil)
+  nil)
+ ((tramp-file-name "ssh" "root" nil "AsusI7" "3022" nil nil)
+  nil)
+ ((tramp-file-name "ssh" "root" nil "localhost" "3022" nil nil)
+  nil))
