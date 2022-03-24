@@ -8,10 +8,10 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCDC"])
- '(custom-enabled-themes (quote (doom-zenburn)))
+ '(column-number-mode t)
+ '(custom-enabled-themes '(doom-zenburn))
  '(custom-safe-themes
-   (quote
-	("1d5e33500bc9548f800f9e248b57d1b2a9ecde79cb40c0b1398dec51ee820daf" "cbdf8c2e1b2b5c15b34ddb5063f1b21514c7169ff20e081d39cf57ffee89bc1e" "6c98bc9f39e8f8fd6da5b9c74a624cbb3782b4be8abae8fd84cbc43053d7c175" "617237cfc66f2dc688b5630b83ccf74931d0bb6d30b7307b7b1f10f9cb190705" "982c97143655b6a3c7bb68bb67a1893e4c11bb982b8667daa7af40f2de6e8010" "6dae894fc5ee669697bd87694f871726bc2a29a8cfee636b8cac1da16711dd3c" "f9d1a145c69fdf09eec687009572a7a22a060b1adb999d47522ef27bd9212b9d" "31a0b6776a361de75e88c30c1e1bb390a499d5275a48968a8f2e3e69fd2215da" "b6d65cdd9cd2508a0240c8415ed5c1f83d92290adbef49c4c05f8febe029e063" "2f7b931d48d587e2448a4ddc565b256406141b87bbfe68e558e1d744d2a90ccd" "a9a67b318b7417adbedaab02f05fa679973e9718d9d26075c6235b1f0db703c8" "da186cce19b5aed3f6a2316845583dbee76aea9255ea0da857d1c058ff003546" "7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "333958c446e920f5c350c4b4016908c130c3b46d590af91e1e7e2a0611f1e8c5" "a7b20039f50e839626f8d6aa96df62afebb56a5bbd1192f557cb2efb5fcfb662" "246a9596178bb806c5f41e5b571546bb6e0f4bd41a9da0df5dfbca7ec6e2250c" "1704976a1797342a1b4ea7a75bdbb3be1569f4619134341bd5a4c1cfb16abad4" "d268b67e0935b9ebc427cad88ded41e875abfcc27abd409726a92e55459e0d01" "745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "5784d048e5a985627520beb8a101561b502a191b52fa401139f4dd20acb07607" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" "97db542a8a1731ef44b60bc97406c1eb7ed4528b0d7296997cbb53969df852d6" "22a514f7051c7eac7f07112a217772f704531b136f00e2ccfaa2e2a456558d39" "0b3aee906629ac7c3bd994914bf252cf92f7a8b0baa6d94cb4dfacbd4068391d" "f91395598d4cb3e2ae6a2db8527ceb83fed79dbaf007f435de3e91e5bda485fb" "0d01e1e300fcafa34ba35d5cf0a21b3b23bc4053d388e352ae6a901994597ab1" "fe2539ccf78f28c519541e37dc77115c6c7c2efcec18b970b16e4a4d2cd9891d" "9b54ba84f245a59af31f90bc78ed1240fca2f5a93f667ed54bbf6c6d71f664ac" "4f1d2476c290eaa5d9ab9d13b60f2c0f1c8fa7703596fa91b235db7f99a9441b" default)))
+   '("1d5e33500bc9548f800f9e248b57d1b2a9ecde79cb40c0b1398dec51ee820daf" "cbdf8c2e1b2b5c15b34ddb5063f1b21514c7169ff20e081d39cf57ffee89bc1e" "6c98bc9f39e8f8fd6da5b9c74a624cbb3782b4be8abae8fd84cbc43053d7c175" "617237cfc66f2dc688b5630b83ccf74931d0bb6d30b7307b7b1f10f9cb190705" "982c97143655b6a3c7bb68bb67a1893e4c11bb982b8667daa7af40f2de6e8010" "6dae894fc5ee669697bd87694f871726bc2a29a8cfee636b8cac1da16711dd3c" "f9d1a145c69fdf09eec687009572a7a22a060b1adb999d47522ef27bd9212b9d" "31a0b6776a361de75e88c30c1e1bb390a499d5275a48968a8f2e3e69fd2215da" "b6d65cdd9cd2508a0240c8415ed5c1f83d92290adbef49c4c05f8febe029e063" "2f7b931d48d587e2448a4ddc565b256406141b87bbfe68e558e1d744d2a90ccd" "a9a67b318b7417adbedaab02f05fa679973e9718d9d26075c6235b1f0db703c8" "da186cce19b5aed3f6a2316845583dbee76aea9255ea0da857d1c058ff003546" "7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "333958c446e920f5c350c4b4016908c130c3b46d590af91e1e7e2a0611f1e8c5" "a7b20039f50e839626f8d6aa96df62afebb56a5bbd1192f557cb2efb5fcfb662" "246a9596178bb806c5f41e5b571546bb6e0f4bd41a9da0df5dfbca7ec6e2250c" "1704976a1797342a1b4ea7a75bdbb3be1569f4619134341bd5a4c1cfb16abad4" "d268b67e0935b9ebc427cad88ded41e875abfcc27abd409726a92e55459e0d01" "745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "5784d048e5a985627520beb8a101561b502a191b52fa401139f4dd20acb07607" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" "97db542a8a1731ef44b60bc97406c1eb7ed4528b0d7296997cbb53969df852d6" "22a514f7051c7eac7f07112a217772f704531b136f00e2ccfaa2e2a456558d39" "0b3aee906629ac7c3bd994914bf252cf92f7a8b0baa6d94cb4dfacbd4068391d" "f91395598d4cb3e2ae6a2db8527ceb83fed79dbaf007f435de3e91e5bda485fb" "0d01e1e300fcafa34ba35d5cf0a21b3b23bc4053d388e352ae6a901994597ab1" "fe2539ccf78f28c519541e37dc77115c6c7c2efcec18b970b16e4a4d2cd9891d" "9b54ba84f245a59af31f90bc78ed1240fca2f5a93f667ed54bbf6c6d71f664ac" "4f1d2476c290eaa5d9ab9d13b60f2c0f1c8fa7703596fa91b235db7f99a9441b" default))
  '(exwm-floating-border-color "#262626")
  '(fci-rule-color "#4F4F4F")
  '(global-display-line-numbers-mode t)
@@ -21,8 +21,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#000000" "#494949"))
  '(objed-cursor-color "#CC9393")
  '(package-selected-packages
-   (quote
-	(company-erlang erlang eglot neotree rustic flycheck-rust flycheck yasnippet company lsp-ui lsp-mode rust-mode markdown-mode doom-themes magit)))
+   '(fill-column-indicator company-erlang erlang eglot neotree rustic flycheck-rust flycheck yasnippet company lsp-ui lsp-mode rust-mode markdown-mode doom-themes magit))
  '(pdf-view-midnight-colors (cons "#DCDCDC" "#3F3F3F"))
  '(rustic-ansi-faces
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCDC"])
@@ -56,7 +55,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 116 :width normal)))))
+ '(default ((t (:family "Roboto Mono" :foundry "GOOG" :slant normal :weight normal :height 98 :width normal)))))
 
 ;; Los repositorios oficiales de Emacs
 (require 'package)
@@ -212,10 +211,21 @@
 ;; Mostrar en la linea actual un color distinto
 (global-hl-line-mode 1)
 
-
 ;; Configuracion para Erlang
 (setq load-path (cons  "/usr/local/otp/lib/tools-<ToolsVer>/emacs"
 load-path))
 (setq erlang-root-dir "/usr/local/otp")
 (setq exec-path (cons "/usr/local/otp/bin" exec-path))
 (require 'erlang-start)
+
+(autoload 'glsl-mode "glsl-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
+
+;; Autoindentacion predeterminada
+(setq-default c-basic-offset 4)
+
+(require 'yasnippet)
+(yas-global-mode 1)
