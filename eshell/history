@@ -7,54 +7,6 @@
 ./info_inet.sh 
 ./info_inet.sh 
 ./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet(1).sh 
-chmod +x ./info_inet(1).sh 
-./info_inet(1).sh 
-cat log_inet.txt 
-cat log_inet.txt 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh  
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-netstat 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
-./info_inet.sh 
 ./ord.py 
 ./info_inet.sh 
 ./info_inet.sh 
@@ -126,3 +78,51 @@ sudo ./info_inet.sh
 sudo ./info_inet.sh  
 sudo ./info_inet.sh  
 sudo su
+cd ..
+ls
+ls -lisa
+ls -lisa --color
+ls .config/
+ls .config/polybar/
+ls .config/polybar/panels/config.ini
+./info_inet.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+rofi -show powermenu
+rofi
+rofi -show p -modi p:rofi-power-menu
+rofi -show p -modi p:rpowermenu
+rofi -show p -modi p:powermenu
+rofi -show p -modi p:powermenu
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+blocks       cuts   forest      hack       launch.sh~  panels    shades
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+.config/rofi/powermenu/powermenu.sh 
+ls
+cd rofi/
+ls
+cd ..
+.config/rofi/powermenu/powermenu.sh 
+sudo search libncurses5-dev
+sudo apt search libncurses5-dev
+gcc -o ncurses.e ncurses.c -lncurses
+cd ncurses/
+gcc -o ncurses.e ncurses.c -lncurses
+./ncurses.e 
+gcc -o ncurses.e ncurses.c -lncurses
+gcc -o ncurses.e ncurses.c -lncurses
+./ncurses.e 
