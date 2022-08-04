@@ -36,6 +36,57 @@
 ;; Borrar el texto seleccionado
 (delete-selection-mode 1)
 
+
+;; És el actualizar las repos de Emacs al iniciar
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+;; Tabulacion por defecto
+(setq-default tab-width 4)
+
+;; Cargar modulos cuando se abre el codigo fuente correspondiente
+(require 'rustic)
+
+;; Cargamos el modulo para gopls
+;; Company mode
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 1)
+
+;; Go - lsp-mode
+;; Set up before-save hooks to format buffer and add/delete imports.
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+
+;; Start LSP Mode and YASnippet mode
+(add-hook 'go-mode-hook #'lsp-deferred)
+(add-hook 'go-mode-hook #'yas-minor-mode)
+
+(setenv "PATH"
+	(concat
+	     (getenv "PATH")
+	     ":~/go/bin/gopls"
+    )
+)
+
+;; Mostrar en la linea actual un color distinto
+(global-hl-line-mode 1)
+
+;; Configuracion para Erlang
+(setq load-path (cons  "/usr/local/otp/lib/tools-<ToolsVer>/emacs"
+load-path))
+(setq erlang-root-dir "/usr/local/otp")
+(setq exec-path (cons "/usr/local/otp/bin" exec-path))
+(require 'erlang-start)
+
+(autoload 'glsl-mode "glsl-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
+
 ;; Para activar el modo Rust
 (require 'rust-mode)
 
@@ -147,52 +198,6 @@
 
 ;; Solo cargamos el modulo de Flycheck para Rust
 (use-package flycheck :ensure)
-
-;; Tabulacion por defecto
-(setq-default tab-width 4)
-
-;; Cargar modulos cuando se abre el codigo fuente correspondiente
-(require 'rustic)
-
-;; Cargamos el modulo para gopls
-;; Company mode
-(setq company-idle-delay 0)
-(setq company-minimum-prefix-length 1)
-
-;; Go - lsp-mode
-;; Set up before-save hooks to format buffer and add/delete imports.
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
-
-;; Start LSP Mode and YASnippet mode
-(add-hook 'go-mode-hook #'lsp-deferred)
-(add-hook 'go-mode-hook #'yas-minor-mode)
-
-(setenv "PATH"
-	(concat
-	     (getenv "PATH")
-	     ":~/go/bin/gopls"
-    )
-)
-
-;; Mostrar en la linea actual un color distinto
-(global-hl-line-mode 1)
-
-;; Configuracion para Erlang
-(setq load-path (cons  "/usr/local/otp/lib/tools-<ToolsVer>/emacs"
-load-path))
-(setq erlang-root-dir "/usr/local/otp")
-(setq exec-path (cons "/usr/local/otp/bin" exec-path))
-(require 'erlang-start)
-
-(autoload 'glsl-mode "glsl-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
-(add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
-(add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
-(add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
-
 (require 'yasnippet)
 (yas-global-mode 1)
 

@@ -86,7 +86,7 @@ La tipografia usada es de JuliaMono en [[https://juliamono.netlify.app/]], pero 
 
 ** Configuración sobre activar el modo mayor de GLSL
 
-GLSL es una lenguaje de programación sobre OpenGL, que es un conjunto de 
+GLSL es un lenguaje de programación sobre OpenGL, que es un conjunto de 
 librerias/herramientas para trabaja con la targeta gráfica del pc.
 
 #+begin_src emacs-lisp
