@@ -133,6 +133,10 @@ ser algo que dejar de desear pero funciona.
 tipo tiling
 - Tiene org-mode un modo para organizarte tus ideas/proyectos
 - Los ficheros .org los puedes leerlos en emacs y en github.
+- Cuando hagas C-x C-f y quieras editar un fichero remoto, borra toda la 
+linea pon /ssh:usuario@dominio:~/ruta/del/fichero auntenticandote cogerá
+la información remota y lo pasara emacs podras hacer ediciones sin usar la
+terminal.
 
 Con todo esto que sepais que esta editado con emacs y subido a mi cuenta
 de github al repositorio de configuración de emacs con magit
