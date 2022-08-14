@@ -137,6 +137,17 @@ tipo tiling
 linea pon /ssh:usuario@dominio:~/ruta/del/fichero auntenticandote cogerá
 la información remota y lo pasara emacs podras hacer ediciones sin usar la
 terminal.
+- Una forma de iniciar con las macros de emacs es usando es la siguiente combinación:
+F3, F4, C-u X y C-x e . Empìezas con F3, haces una edición en la que se repetirá, 
+acabas con F4, despues indicas X veces se quiere repetir con C-u X y lo ejecutas
+con C-x e.
+- No se puede combinar con Buscar y reemplazar con las macros
+- Emacs para las macros dispone kit de funciones y de contadores, haciendo que apenas 
+toques el teclado.
+- Las macros se pueden combinar con los cambios de ventanas, asegurate de que tienes 
+todos buffers abiertos en diferentes ventanas para ejecutar la macro
+- Cuando veas que tengas que hacer una misma edición varias veces, pon en practica
+el uso de las macros(si quieres).
 
 Con todo esto que sepais que esta editado con emacs y subido a mi cuenta
 de github al repositorio de configuración de emacs con magit
