@@ -54,45 +54,45 @@ modificarlos que se ajusten a tu flujo de trabajo habitual.
 Control o Ctrl se lee con C-, Alt se lee con M-, Windows/Super se lee 
 como s-
 
-Cerrar emacs: C-x C-c
-Abrir un fichero, carpeta o crear fichero: C-x C-f
-Guardar: C-x C-s
-Cuardar como: C-x C-w
-Dividir ventana horizontalmente: C-x 2
-Dividir ventana verticalmente: C-x 3
-Cerrar todas la ventanas menos el actual: C-x 1
-Cerrar la ventanas actual: C-x 0
-Cambiar a la siguiente ventana: C-x o
-Cambiar de buffer: C-x b nombre del buffer
-Listar todos lo buffers: C-x C-b
-Cerrar un buffer: C-x k nombre del buffer
-Cancelar un comando o salir de ello: C-x g o ESC ESC ESC
-Inicio de linea: inicio/home
-Final de linea: fin/end
-Inicio de ventana: C-inicio
-Final de ventana: C-fin
-Buscar: C-s
-Reemplazar: M-%
-Mover el cursor entre lineas en blanco: C-[arriba y abajo]
-Mover el cursor entre palabras: C-[izquierda y derecha]
-Mover el cursor a un linea concreta: M-g g
-Seleccionar texto: Shift-Flechas de dirección
-Seleccionar todo: C-x h, C-Shift-end o C-Shift-inicio
-Edicion multilinea: C-x SPC y se combina con retroceso/backspace o 
+- Cerrar emacs: C-x C-c
+- Abrir un fichero, carpeta o crear fichero: C-x C-f
+- Guardar: C-x C-s
+- Cuardar como: C-x C-w
+- Dividir ventana horizontalmente: C-x 2
+- Dividir ventana verticalmente: C-x 3
+- Cerrar todas la ventanas menos el actual: C-x 1
+- Cerrar la ventanas actual: C-x 0
+- Cambiar a la siguiente ventana: C-x o
+- Cambiar de buffer: C-x b nombre del buffer
+- Listar todos lo buffers: C-x C-b
+- Cerrar un buffer: C-x k nombre del buffer
+- Cancelar un comando o salir de ello: C-x g o ESC ESC ESC
+- Inicio de linea: inicio/home
+- Final de linea: fin/end
+- Inicio de ventana: C-inicio
+- Final de ventana: C-fin
+- Buscar: C-s
+- Reemplazar: M-%
+- Mover el cursor entre lineas en blanco: C-[arriba y abajo]
+- Mover el cursor entre palabras: C-[izquierda y derecha]
+- Mover el cursor a un linea concreta: M-g g
+- Seleccionar texto: Shift-Flechas de dirección
+- Seleccionar todo: C-x h, C-Shift-end o C-Shift-inicio
+- Edicion multilinea: C-x SPC y se combina con retroceso/backspace o 
 	                                          M-x string-rectangle
-Copiar: M-w, si esta activado CUA keys C-c
-Cortar: C-w, si esta activado CUA keys C-x
-Pegar: C-y, si esta activado CUA keys C-v
-Deshacer: C-x u
-Executar funciones/plugins: M-x
-Executar una funcionalidad varias veces: C-u X, 
+- Copiar: M-w, si esta activado CUA keys C-c
+- Cortar: C-w, si esta activado CUA keys C-x
+- Pegar: C-y, si esta activado CUA keys C-v
+- Deshacer: C-x u
+- Executar funciones/plugins: M-x
+- Executar una funcionalidad varias veces: C-u X, 
 	X es el numero de veces a ejecutar
-Empezar a grabar una macro: F3
-Acabar de grabar una macro: F4
-Executar una macro: C-x e
-Pantalla completa: F11
-Barra de menu: F10
-Lanzar un comando a la terminal: M-!
+- Empezar a grabar una macro: F3
+- Acabar de grabar una macro: F4
+- Executar una macro: C-x e
+- Pantalla completa: F11
+- Barra de menu: F10
+- Lanzar un comando a la terminal: M-!
 
 # Comandos para emacs
 
