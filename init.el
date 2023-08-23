@@ -36,7 +36,6 @@
 ;; Borrar el texto seleccionado
 (delete-selection-mode 1)
 
-
 ;; És el actualizar las repos de Emacs al iniciar
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -45,41 +44,12 @@
 ;; Tabulacion por defecto
 (setq-default tab-width 4)
 
-;; Cargar modulos cuando se abre el codigo fuente correspondiente
-(require 'rustic)
-
-;; Cargamos el modulo para gopls
-;; Company mode
-(setq company-idle-delay 0)
-(setq company-minimum-prefix-length 1)
-
-;; Go - lsp-mode
-;; Set up before-save hooks to format buffer and add/delete imports.
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
-
 ;; Start LSP Mode and YASnippet mode
 (add-hook 'go-mode-hook #'lsp-deferred)
 (add-hook 'go-mode-hook #'yas-minor-mode)
 
-(setenv "PATH"
-	(concat
-	     (getenv "PATH")
-	     ":~/go/bin/gopls"
-    )
-)
-
 ;; Mostrar en la linea actual un color distinto
 (global-hl-line-mode 1)
-
-;; Configuracion para Erlang
-(setq load-path (cons  "/usr/local/otp/lib/tools-<ToolsVer>/emacs"
-load-path))
-(setq erlang-root-dir "/usr/local/otp")
-(setq exec-path (cons "/usr/local/otp/bin" exec-path))
-(require 'erlang-start)
 
 (autoload 'glsl-mode "glsl-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
@@ -87,43 +57,11 @@ load-path))
 (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
-;; Para activar el modo Rust
-(require 'rust-mode)
 
 ;; És el actualizar las repos de Emacs al iniciar
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-
-;; Configuracion del Rustic y los shortcuts
-(use-package rustic
-  :ensure
-  :bind (:map rustic-mode-map
-              ("M-j" . lsp-ui-imenu)
-              ("M-?" . lsp-find-references)
-              ("C-c C-c l" . flycheck-list-errors)
-              ("C-c C-c a" . lsp-execute-code-action)
-              ("C-c C-c r" . lsp-rename)
-              ("C-c C-c q" . lsp-workspace-restart)
-              ("C-c C-c Q" . lsp-workspace-shutdown)
-              ("C-c C-c s" . lsp-rust-analyzer-status))
-  :config
-  ;; uncomment for less flashiness
-  ;; (setq lsp-eldoc-hook nil)
-  ;; (setq lsp-enable-symbol-highlighting nil)
-  ;; (setq lsp-signature-auto-activate nil)
-
-  ;; comment to disable rustfmt on save
-  (setq rustic-format-on-save t)
-  (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
-
-(defun rk/rustic-mode-hook ()
-  ;; so that run C-c C-c C-r works without having to confirm, but don't try to
-  ;; save rust buffers that are not file visiting. Once
-  ;; https://github.com/brotzeit/rustic/issues/253 has been resolved this should
-  ;; no longer be necessary.
-  (when buffer-file-name
-    (setq-local buffer-save-without-query t)))
 
 ;; LSP y LSP-UI modos
 (use-package lsp-mode
