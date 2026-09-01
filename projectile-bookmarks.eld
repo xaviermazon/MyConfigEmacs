@@ -1,0 +1,1 @@
+("~/kwin/" "~/sndcpy/" "~/scrcpy/" "~/gtest-example/" "~/gtest-cmake-example/" "~/googletest/" "~/emacs-winum/" "~/cpp_starter_project/" "~/copy-fail-CVE-2026-31431/" "~/kernel-build/" "~/copy-fail-c/" "~/.emacs.d/" "~/gtest-demo/" "~/linux/")
