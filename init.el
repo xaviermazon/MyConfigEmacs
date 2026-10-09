@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil; -*-
 (package-initialize)
 
 ;; Los temas de colores para emacs, esta el Doom-Iosvkem
@@ -288,7 +289,7 @@
 (menu-bar-mode -1)
 
 ;; Ligaduras de fira code
-(load "~/.emacs.d/ligature.el")
+;;(load "~/.emacs.d/ligature.el")
 
 ;; -*- mode: elisp -*-
 
@@ -341,4 +342,4 @@
 (setq compilation-error-face 'error)
 (setq compilation-warning-face 'warning)
 
-;; M-: (load-file "~/.emacs.d/init.el")
+;; M-: (load- "~/.emacs.d/init.el")

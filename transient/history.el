@@ -12,6 +12,6 @@
   ("--autostash"))
  (magit-remote
   ("-f"))
- (magit-remote\.<remote>\.*url "git@github.com:xaviermazon/fonts.git" "https://github.com/xaviermazon/polybar.git")
+ (magit-remote.<remote>.*url "git@github.com:xaviermazon/fonts.git" "https://github.com/xaviermazon/polybar.git")
  (magit-submodule nil
 				  ("--recursive")))
